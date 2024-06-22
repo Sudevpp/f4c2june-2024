@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pincode Lookup App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pincode Lookup App</h1>
+        <form id="lookup-form">
+            <label for="pincode">Enter Pincode:</label>
+            <input type="text" id="pincode" name="pincode" maxlength="6" required>
+            <button type="submit">Lookup</button>
+        </form>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="error-message" class="error-message"></div>
+        <div id="results" class="results"></div>
+        <input type="text" id="filter" placeholder="Filter by post office name">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
